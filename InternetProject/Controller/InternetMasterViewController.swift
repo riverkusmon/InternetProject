@@ -55,16 +55,41 @@ public class InternetMasterViewController: UITableViewController
         }
     }
 
-    // MARK: - Table view data source
+    public override func viewWillAppear(_ animated: Bool) -> Void
+    {
+        clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
+        
+        super.viewWillAppear(animated)
+    }
 
     public override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let rowText = internetTopics[indexPath.row]
+        cell.textLabel!.text = rowText
+        return cell
+    }
+    
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        internetDetail?.detailAddress = addresses[indexPath.row]
+        internetDetail?.detailTitle = internetTopics[indexPath.row]
+        if(internetDetail != nil)
+        {
+            splitViewController?.showDetailViewController(internetDetail!, sender: nil)
+        }
     }
 
 }
