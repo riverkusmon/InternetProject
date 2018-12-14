@@ -13,6 +13,7 @@
 		41C9C0DF21C1AC1500315CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41C9C0DE21C1AC1500315CAC /* Assets.xcassets */; };
 		41C9C0E221C1AC1500315CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C9C0E021C1AC1500315CAC /* LaunchScreen.storyboard */; };
 		E53AAD6B21C43EE700984147 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AAD6A21C43EE700984147 /* InternetDetailViewController.swift */; };
+		E53AAD6D21C4457400984147 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53AAD6C21C4457400984147 /* InternetMasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		41C9C0E121C1AC1500315CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41C9C0E321C1AC1500315CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53AAD6A21C43EE700984147 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		E53AAD6C21C4457400984147 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				41C9C0D921C1AC0700315CAC /* ViewController.swift */,
 				E53AAD6A21C43EE700984147 /* InternetDetailViewController.swift */,
+				E53AAD6C21C4457400984147 /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C9C0DA21C1AC0700315CAC /* ViewController.swift in Sources */,
+				E53AAD6D21C4457400984147 /* InternetMasterViewController.swift in Sources */,
 				E53AAD6B21C43EE700984147 /* InternetDetailViewController.swift in Sources */,
 				41C9C0D821C1AC0700315CAC /* AppDelegate.swift in Sources */,
 			);
