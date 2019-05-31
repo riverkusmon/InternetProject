@@ -30,7 +30,8 @@ public class InternetMasterViewController: UITableViewController
             "https://www.twitter.com",
             "https://www.youtube.com",
             "https://www.canyons.instructure.com",
-            "https://www.ctec.canyonsdistrict.org"
+            "https://www.ctec.canyonsdistrict.org",
+            "https://www.instagram.com"
         
         ]
         if let splitView = splitViewController
@@ -42,7 +43,8 @@ public class InternetMasterViewController: UITableViewController
     
     
     
-    public override func viewDidLoad() -> Void {
+    public override func viewDidLoad() -> Void
+    {
         super.viewDidLoad()
         
         setupDetailContents()
@@ -62,15 +64,15 @@ public class InternetMasterViewController: UITableViewController
         super.viewWillAppear(animated)
     }
 
-    public override func numberOfSections(in tableView: UITableView) -> Int {
+   // public override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+     //   return addresses.count
+    //}
 
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return addresses.count
     }
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
